@@ -1,0 +1,109 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #E0FEFE;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  max-width: 80em;
+  width: 100%;
+}
+
+body .container .row {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 50px 0;
+}
+
+body .container .row h1 {
+  font-size: 5em;
+  font-family: "Bungee Shade", cursive;
+}
+
+body .container .row input {
+  width: 60%;
+  height: 2em;
+  padding-left: 25px;
+  font-size: 1.5em;
+  font-family: "Ibarra Real Nova", serif;
+  border: none;
+}
+
+body .container .row #enter {
+  height: 2em;
+  font-size: 1.5em;
+  padding: 0 25px 0 25px;
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+}
+
+body .container .row #todo-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+body .container .row #todo-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 2em;
+  width: 50%;
+  font-size: 1.5em;
+  font-family: "Ibarra Real Nova", serif;
+  text-align: left;
+  padding-left: 25px;
+  margin: 0 0 5px 0;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+body .container .row #todo-list li .done {
+  height: 100%;
+  font-size: 1.5em;
+  font-family: "Ibarra Real Nova", serif;
+  padding: 0 25px 0 25px;
+  background-color: #FFFFFF;
+  color: #000000;
+  border: none;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+
+body .container .row #todo-list li .done:hover {
+  background-color: #f3c1c6;
+}
+/*# sourceMappingURL=styles.min.css.map */

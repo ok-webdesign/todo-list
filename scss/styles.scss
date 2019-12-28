@@ -1,0 +1,195 @@
+// styles.scss
+// Omar Kamal
+// 12/28/2019
+
+// colors
+$pastel-yellow: #FFFFD8;
+$pastel-blue: #E0FEFE;
+$pastel-red: #f3c1c6;
+$dark-pastel-blue: #e0ecfe;
+$pastel-green: #b6e6bd;
+$pure-black: #000000;
+$pure-white: #FFFFFF;
+
+// fonts
+$title-font: 'Bungee Shade', cursive;
+$main-font: 'Ibarra Real Nova', serif;
+
+// sizing
+$max-container-width: 80em;
+$full-width: 100%;
+$title-font-size: 5em;
+$list-item-font-size: 1.5em;
+$input-width: 60%;
+$list-item-width: 50%;
+$input-height: 2em;
+$list-item-height: $input-height;
+$remove-task-btn-height: 100%;
+
+// spacing
+$no-padding: 0;
+$no-margin: 0;
+$input-left-padding: 25px;
+$list-item-left-padding: $input-left-padding;
+$button-padding: 0 25px 0 25px;
+$row-margins: 0 0 50px 0;
+$list-item-margins: 0 0 5px 0;
+
+// timing
+$hover-transition-time: 0.5s;
+
+body {
+
+    // layout
+    display: flex;
+    justify-content: center;
+
+    // colors
+    background-color: $pastel-blue;
+
+
+    .container {
+
+        // layout
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        position: absolute;
+
+        // sizing
+        max-width: $max-container-width;
+        width: $full-width;
+
+        .row {
+
+            // layout
+            text-align: center;
+
+            // sizing
+            width: $full-width;
+
+            // spacing
+            margin: $row-margins;
+
+            h1 {
+
+                // fonts & text
+                font-size: $title-font-size;
+                font-family: $title-font;
+
+            }
+
+            input {
+
+                // sizing
+                width: $input-width;
+                height: $input-height;
+
+                // spacing
+                padding-left: $input-left-padding;
+
+                // fonts & text
+                font-size: $list-item-font-size;
+                font-family: $main-font;
+
+                // borders
+                border: none;
+
+            }
+
+            #enter {
+                    
+                    // sizing
+                    height: $input-height;
+
+                    // fonts & text
+                    font-size: $list-item-font-size;
+
+                    // spacing
+                    padding: $button-padding;
+
+                    // colors
+                    background-color: $pure-black;
+                    color: $pure-white;
+
+                    // borders
+                    border: none;
+                    
+            }
+
+            #todo-list {
+
+                // layout
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                // list styling
+                list-style: none;
+
+                li {
+
+                    // layout
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    // sizing
+                    height: $list-item-height;
+                    width: $list-item-width;
+
+                    // fonts & text
+                    font-size: $list-item-font-size;
+                    font-family: $main-font;
+                    text-align: left;
+
+                    // spacing
+                    padding-left: $list-item-left-padding;
+                    margin: $list-item-margins;
+
+                    // colors
+                    background-color: $pure-black;
+                    color: $pure-white;
+
+                    .done {
+
+                        // sizing
+                        height: $remove-task-btn-height;
+
+                        // fonts & text
+                        font-size: $list-item-font-size;
+                        font-family: $main-font;
+
+                        // spacing
+                        padding: $button-padding;
+
+                        // color
+                        background-color: $pure-white;
+                        color: $pure-black;
+
+                        // border
+                        border: none;
+
+                        // transitions
+                        transition: $hover-transition-time ease-in;
+
+                        // on hover
+                        &:hover {
+
+                            // colors
+                            background-color: $pastel-red;
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
